@@ -32,7 +32,6 @@ class EstudantesController extends Controller
         ->select('estudantes.*', 'maes.id as id_mae', 'maes.nome as mae')
         ->get();
         return $estudantes;
-       //return view('estudantes.estudantes', compact('estudantes'));
     }
 
 
@@ -102,7 +101,6 @@ class EstudantesController extends Controller
             ->select('estudantes.*','maes.id as id_mae', 'maes.nome as mae', 'maes.cpf', 'maes.dia_pagamento', 'enderecos.id as id_endereco', 'enderecos.cep', 'enderecos.rua', 'enderecos.numero', 'enderecos.complemento', 'enderecos.bairro', 'enderecos.cidade', 'enderecos.estado')
             ->find($id);
          return $estudante;
-        /*return view('estudantes.excluir',compact('estudante'));*/
     }
 
 
