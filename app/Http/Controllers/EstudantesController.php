@@ -113,7 +113,6 @@ class EstudantesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return 'a';exit;
         //PEGA ID MAE E ID ENDERECO DE ACORDO COM O ESTUDANTE
         $estudante = $this->estudante
             ->join('maes', 'maes.id', '=', 'estudantes.id_mae')
